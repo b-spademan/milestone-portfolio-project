@@ -88,9 +88,14 @@ textarea {
    ========================================================================== */
 
    /***** Base Styles *****/
+   html {
+     font-size: 16px;
+   }
+
    body {
      font-family: 'Open Sans', sans-serif;
-     font-size: 16px;
+     font-size: 1em;
+     margin: 0 auto;
    }
 
    h1, h2, h4 {
@@ -101,76 +106,84 @@ textarea {
      color: #576066;
      font-size: 2.25em;
      text-align: center;
-     padding: 40px 0;
      margin: 0;
+     padding: 30px 0;
    }
 
    h4 {
      color: #576066;
+     margin: 10px 0;
+     text-align: center;
    }
 
-   header {
-     height: 600px;
-     width: auto;
-     background-image: url("../img/leone-venter-unsplash.jpg");
-     background-size: cover;
+   img {
+     width: 100%;
    }
 
-   footer {
-     background-color: #D4AFB9;
-     height: auto;
+   figure {
+     margin: 0;
    }
 
    /***** Header *****/
 
-   .hero-wrapper {
-     width: 100%;
+   header {
+     background-image: url("../img/leone-venter-unsplash.jpg");
+     background-size: cover;
      display: flex;
-     flex-direction: row;
-     justify-content: flex-start;
+     justify-content: center;
      align-items: center;
+     padding: 15px 0;
    }
 
-   .hero-content {
-     width: 45%;
-     padding-left: 90px;
-     margin-top: 40px;
+   .hero-wrapper {
+     width: 80%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+     padding: 0 0 50px 20px;
    }
 
    header h1 {
      color: #EF798A;
-     font-size: 4em;
+     font-size: 3em;
      text-align: left;
    }
 
    header h2 {
      font-family: 'Open Sans', sans-serif;
-     font-size: 2em;
+     font-size: 1.5em;
      text-align: left;
    }
 
    /***** My Work *****/
    .projects {
      display: flex;
-     flex-flow: row wrap;
+     flex-direction: column;
      justify-content: center;
-     align-items: flex-start;
+     align-items: center;
    }
 
    .project-image {
-     margin-bottom: 30px;
-     width: 40%;
+     margin: 0 auto;
+     width: 90%;
      display: flex;
      justify-content: center;
-     padding: 10px 30px;
+     padding: 10px 0;
    }
 
    .project-description {
-     width: 40%;
-     padding: 0 30px;
+     width: 90%;
+     margin: 0 auto;
      display: flex;
      flex-direction: column;
-     align-content: flex-start;
+     align-content: center;
+   }
+
+   .recipes, .rogue, .unplugged {
+     display: flex;
+     flex-flow: column-reverse;
+     margin: 10px 0;
    }
 
    /***** About Me *****/
@@ -180,41 +193,51 @@ textarea {
 
    .about-content {
      display: flex;
-     flex-direction: row;
+     flex-direction: column-reverse;
      justify-content: center;
-     align-items: flex-start;
+     align-items: center;
      padding-bottom: 40px;
    }
 
    .about figure {
-     width: 30%;
+     width: 60%;
    }
 
    figure img {
      width: 100%;
      height: auto;
-     overflow: hidden;
    }
 
    .about-description {
-     width: 40%;
-     margin-left: 40px;
+     width: 90%;
    }
 
    /***** Footer *****/
+   footer {
+     background-color: #D4AFB9;
+
+   }
+
    footer .contact-content {
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      justify-content: center;
-     align-content: center;
+     align-items: center;
+   }
+
+   footer .contact-content p {
+     font-size: 0.8em;
+     text-align: center;
+     margin: 0;
    }
 
    .contact, .social, .meet-up {
      display: flex;
      flex-direction: column;
-     justify-content: flex-start;
+     justify-content: center;
      align-items: center;
      width: 33%;
+     margin: 20px 0;
    }
 
    .icon-wrapper {
@@ -225,7 +248,7 @@ textarea {
    }
 
    .contact-icon {
-     font-size: 1.5em;
+     font-size: 1.2em;
      width: 3em;
      text-align: center;
      margin: 0;
@@ -244,8 +267,9 @@ textarea {
    footer .copyright p {
      text-align: center;
      padding: 50px 0 30px 0;
-     margin: 10px 0;
-   }   
+     margin: 0;
+     font-size: 0.7em;
+   }
 
 /* ==========================================================================
    Helper classes
